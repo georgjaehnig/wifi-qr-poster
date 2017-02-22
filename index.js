@@ -20,7 +20,7 @@ function escape_string (string) {
 		return output;
 };
         
-function print() {
+function generate() {
 
 		var ssid = $('#ssid').val();
 		var hidden = $('#hidden').is(':checked');
