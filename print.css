@@ -9,11 +9,13 @@
 .print .key .img {
 	width: 5cm;
 	text-align:center;
+	vertical-align: middle
 }
 
 .print .ssid .text,
 .print .key .text {
 	font-size: 72pt;
+	vertical-align: middle
 }
 
 .print .ssid .img img,
