@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wifiqr.info | Generate a poster with password & QR Code for your Wifi network</title>
+
+		<!-- <link rel="stylesheet" type="text/css" href="print.css" media="print" /> -->
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+    <script src="index.js"></script>
+
+  </head>
+  <body>
+
+		<!--
+   <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WifiQR.info</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+		-->
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>WifiQR.info</h1>
+				<p class="lead">Generate a poster with password & QR Code for your Wifi network. Your guests then only need to scan it with their phone. No more "how's the password spelled?"-hassle! <a href="example.png">See example.</a></p>
+      </div>
+
+
+<form class="form-horizontal"  >
+  <div class="form-group">
+    <label class="col-xs-3 control-label" for="ssid">SSID</label>
+    <div class="col-xs-9">
+    	<input type="text" class="form-control" id="ssid" placeholder="SSID"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-xs-3 control-label" for="password">Password</label>
+    <div class="col-xs-9">
+   	  <input type="text" class="form-control" id="password" placeholder="Password" />
+  	</div>
+  </div>
+  <div class="form-group">
+    <label class="col-xs-3 control-label" for="encryption">Encryption</label>
+    <div class="col-xs-9">
+			<select class="form-control" id="encryption">
+				<option>WPA2</option>
+				<option>WPA</option>
+				<option>WEP</option>
+				<option>nopass</option>
+			</select>
+  	</div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-offset-3 col-sm-9">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="hidden"> Network is hidden / invisible
+        </label>
+      </div>
+    </div>
+  </div>
+	<div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+			<button type="button" class="btn btn-primary" onclick="print();">Print</button> (Poster with QR code will be shown in print preview.)
+    </div>
+  </div>
+</form>
+
+
+		<div id="qrcode"></div>
+			
+    </div><!-- /.container -->
+
+  </body>
+</html>
