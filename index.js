@@ -27,9 +27,9 @@ function generate() {
 		var encryption = $('#encryption').val();
 
 		if (encryption != 'nopass') {
-				var password = $('#password').val();
+				var key = $('#key').val();
 		} else {
-				var password = '';
+				var key = '';
 		}
 
 		var qrstring = 
@@ -38,7 +38,7 @@ function generate() {
 			';T:' +
 			encryption +
 			';P:' +
-			escape_string(password) + ';';
+			escape_string(key) + ';';
 
 		if (hidden) {
 				qrstring += 'H:true';
@@ -47,7 +47,7 @@ function generate() {
 		qrstring += ';';
 
 		$('.print .ssid .text').text(ssid);
-		$('.print .password .text').text(password);
+		$('.print .key .text').text(key);
 
 		$('#qrcode').empty();
 		$('#qrcode').qrcode({
