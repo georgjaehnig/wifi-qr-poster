@@ -31,5 +31,13 @@
 }
 
 #qrcode {
-	margin-top: 3cm;
+	margin-top: 1.5cm;
+	width: 100%;
+	text-align: center;
+}
+.source {
+	font-style: italic;
+	width:100%;
+	text-align: center;
+	margin-top: 1cm;
 }
