@@ -47,6 +47,11 @@ function generate() {
 		qrstring += ';';
 
 		$('#qrcode').empty();
-		$('#qrcode').qrcode(qrstring);
+		$('#qrcode').qrcode({
+			width: 800,
+			height: 800,
+			text: qrstring
+		});
 
+		print(); 
 };
