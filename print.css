@@ -18,6 +18,10 @@
 	vertical-align: middle
 }
 
+.print .ssid .text {
+	font-weight: bold;
+}
+
 .print .ssid .img img {
 	width: 5cm;
 }
