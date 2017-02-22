@@ -53,56 +53,51 @@
 				<p class="lead">Generate a poster with password & QR Code for your Wifi network. Your guests then only need to scan it with their phone. No more "how's the password spelled?"-hassle! <a href="example.png">See example.</a></p>
       </div>
 
-
-<form class="form-horizontal"  >
-  <div class="form-group">
-    <label class="col-xs-3 control-label" for="ssid">SSID</label>
-    <div class="col-xs-9">
-    	<input type="text" class="form-control" id="ssid" placeholder="SSID"/>
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="col-xs-3 control-label" for="password">Password</label>
-    <div class="col-xs-9">
-   	  <input type="text" class="form-control" id="password" placeholder="Password" />
-  	</div>
-  </div>
-  <div class="form-group">
-    <label class="col-xs-3 control-label" for="encryption">Encryption</label>
-    <div class="col-xs-9">
-			<select class="form-control" id="encryption">
-				<option>WPA2</option>
-				<option>WPA</option>
-				<option>WEP</option>
-				<option>nopass</option>
-			</select>
-  	</div>
-  </div>
-  <div class="form-group">
-    <div class="col-xs-offset-3 col-sm-9">
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" id="hidden"> Network is hidden / invisible
-        </label>
-      </div>
-    </div>
-  </div>
-	<div class="form-group">
-    <div class="col-sm-offset-3 col-sm-9">
-			<button type="button" class="btn btn-primary" onclick="generate();">Print</button> (Poster with QR code will be shown in print preview.)
-    </div>
-  </div>
-</form>
-
-
+			<form class="form-horizontal"  >
+				<div class="form-group">
+					<label class="col-xs-3 control-label" for="ssid">SSID</label>
+					<div class="col-xs-9">
+						<input type="text" class="form-control" id="ssid" placeholder="SSID"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-xs-3 control-label" for="password">Password</label>
+					<div class="col-xs-9">
+						<input type="text" class="form-control" id="password" placeholder="Password" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-xs-3 control-label" for="encryption">Encryption</label>
+					<div class="col-xs-9">
+						<select class="form-control" id="encryption">
+							<option>WPA2</option>
+							<option>WPA</option>
+							<option>WEP</option>
+							<option>nopass</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-offset-3 col-sm-9">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" id="hidden"> Network is hidden / invisible
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-3 col-sm-9">
+						<button type="button" class="btn btn-primary" onclick="generate();">Print</button> (Poster with QR code will be shown in print preview.)
+					</div>
+				</div>
+			</form>
 			
     </div><!-- /.container -->
 
-<div class="print">
-
-		<div id="qrcode"></div>
-
-</div>
+		<div class="print">
+			<div id="qrcode"></div>
+		</div>
 
   </body>
 </html>
