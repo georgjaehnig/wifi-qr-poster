@@ -18,9 +18,12 @@
 	vertical-align: middle
 }
 
-.print .ssid .img img,
-.print .key .img img {
+.print .ssid .img img {
 	width: 5cm;
+}
+.print .key .img img {
+	width: 3cm;
+	margin: 0cm 1cm;
 }
 
 #qrcode {
