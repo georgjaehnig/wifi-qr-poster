@@ -7,7 +7,6 @@
 } 
 .print .ssid .img,
 .print .key .img {
-	width: 5cm;
 	text-align:center;
 	margin-right: 2cm;
 	vertical-align: middle
