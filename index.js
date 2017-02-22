@@ -20,6 +20,17 @@ function escape_string (string) {
 		return output;
 };
         
+function adjustFontSize(selector, maxWidth) {
+	box = $(selector);
+
+	while (box.width() > 500) {
+		fontSize = $(selector).css('font-size');
+		fontSize = parseInt(fontSize);
+		fontSize = fontSize - 5;
+		$(selector).css('font-size', fontSize + 'px');
+	}
+}
+
 function generate() {
 
 		var ssid = $('#ssid').val();
@@ -48,6 +59,9 @@ function generate() {
 
 		$('.print .ssid .text').text(ssid);
 		$('.print .key .text').text(key);
+
+		adjustFontSize('.print .ssid .text', 500)
+		adjustFontSize('.print .key .text', 500)
 
 		$('#qrcode').empty();
 		$('#qrcode').qrcode({
