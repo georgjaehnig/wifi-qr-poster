@@ -46,8 +46,8 @@ function generate() {
 
 		qrstring += ';';
 
-		$('#qrcode').empty();
-		$('#qrcode').qrcode({
+		$('.print .qrcode').empty();
+		$('.print .qrcode').qrcode({
 			width: 800,
 			height: 800,
 			text: qrstring
