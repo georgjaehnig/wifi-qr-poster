@@ -46,8 +46,8 @@ function generate() {
 
 		qrstring += ';';
 
-		$('.print span.ssid').text(ssid);
-		$('.print span.password').text(password);
+		$('.print .ssid .text').text(ssid);
+		$('.print .password .text').text(password);
 
 		$('#qrcode').empty();
 		$('#qrcode').qrcode({
