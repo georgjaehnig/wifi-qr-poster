@@ -5,8 +5,8 @@
     /* this affects the margin in the printer settings */ 
     margin: 30mm 30mm 30mm 30mm;  
 } 
-.print .ssid img,
-.print .key img {
+.print .ssid .img img,
+.print .key .img img {
 	width: 5cm;
 }
 
