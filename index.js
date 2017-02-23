@@ -23,7 +23,7 @@ function escape_string (string) {
 function adjustFontSize(selector, maxWidth) {
 	box = $(selector);
 
-	while (box.width() > 500) {
+	while (box.width() > maxWidth) {
 		fontSize = $(selector).css('font-size');
 		fontSize = parseInt(fontSize);
 		fontSize = fontSize - 5;
