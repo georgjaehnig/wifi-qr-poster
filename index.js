@@ -60,13 +60,13 @@ function generate() {
 		$('.print .ssid .text').text(ssid);
 		$('.print .key .text').text(key);
 
-		adjustFontSize('.print .ssid .text', 500)
-		adjustFontSize('.print .key .text', 500)
+		adjustFontSize('.print .ssid .text', 400)
+		adjustFontSize('.print .key .text', 400)
 
 		$('#qrcode').empty();
 		$('#qrcode').qrcode({
-			width: 800,
-			height: 800,
+			width: 520,
+			height: 520,
 			text: qrstring
 		});
 
