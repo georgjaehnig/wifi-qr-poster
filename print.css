@@ -14,7 +14,7 @@
 
 .print .ssid .text,
 .print .key .text {
-	font-size: 72pt;
+	font-size: 80px;
 	vertical-align: middle
 }
 
