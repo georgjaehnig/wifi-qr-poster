@@ -3,7 +3,7 @@
     size: auto;   /* auto is the initial value */ 
 
     /* this affects the margin in the printer settings */ 
-    margin: 30mm 30mm 30mm 30mm;  
+    margin: 20mm 20mm 20mm 20mm;  
 } 
 .print .ssid .img,
 .print .key .img {
