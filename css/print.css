@@ -33,8 +33,9 @@
 	text-align: center;
 }
 .source {
+	font-size: 10pt;
 	font-style: italic;
-	width:100%;
+	width: 100%;
 	text-align: center;
-	margin-top: 1cm;
+	margin-top: 0.5cm;
 }
