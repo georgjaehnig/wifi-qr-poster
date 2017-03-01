@@ -23,8 +23,9 @@ function escape_string (string) {
 function generate() {
 
 		var ssid = $('#ssid').val();
-		var hidden = $('#hidden').is(':checked');
 		var encryption = $('#encryption').val();
+		var hidden = $('#hidden').is(':checked');
+		var hide_key = $('#hide-key').is(':checked');
 
 		if (encryption != 'nopass') {
 				var key = $('#key').val();
@@ -55,6 +56,12 @@ function generate() {
 			height: 520,
 			text: qrstring
 		});
+
+		if (hide_key) {
+			$('.print .key').hide();
+		} else {
+			$('.print .key').show();
+		}
 
 		print(); 
 };
