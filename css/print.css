@@ -6,36 +6,36 @@
     margin: 20mm 20mm 20mm 20mm;  
 } 
 .print .wifi {
-	text-align: center;
+  text-align: center;
 }
 .print .wifi img {
-	width: 3cm;
+  width: 3cm;
 }
 .print .ssid {
-	text-align: center;
-	font-size: 70px;
-	font-weight: bold;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
 }
 .print .key {
-	text-align: center;
-	font-size: 50px;
+  text-align: center;
+  font-size: 50px;
 }
 .print .key img {
-	text-align:center;
-	height: 1.5cm;
-	margin-right: 0.3cm;
-	vertical-align: middle
+  text-align:center;
+  height: 1.5cm;
+  margin-right: 0.3cm;
+  vertical-align: middle
 }
 
 #qrcode {
-	margin-top: 1cm;
-	width: 100%;
-	text-align: center;
+  margin-top: 1cm;
+  width: 100%;
+  text-align: center;
 }
 .source {
-	font-size: 10pt;
-	font-style: italic;
-	width: 100%;
-	text-align: center;
-	margin-top: 0.5cm;
+  font-size: 10pt;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5cm;
 }

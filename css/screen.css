@@ -1,11 +1,11 @@
 .print {
-	display: none;
+  display: none;
 }
 .example {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 footer {
-	border-top: 1px solid #e0e0e0;
-	padding-top: 1em;
-	margin-top: 1em;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1em;
+  margin-top: 1em;
 }
