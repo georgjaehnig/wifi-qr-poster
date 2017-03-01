@@ -28,64 +28,68 @@
 
     <div class="container hidden-print">
 
-      <div class="col-sm-9">
-        <h1>Wifi-QR-Poster</h1>
-        <p class="lead">Generate a poster with password & QR Code for your Wifi network. Your guests then only need to scan it with their phone. No more "how's the password spelled?"-hassle!</p>
+      <div class="row">
 
-        <p>When scanned with an Android phone, the Wifi network will be immediately recognized and you will be asked to connect with it. On iPhone/iOS, you will see the text and can copy/paste the password from it. Just try it out with the code aside.</p> 
+        <div class="col-sm-9">
+          <h1>Wifi-QR-Poster</h1>
+          <p class="lead">Generate a poster with password & QR Code for your Wifi network. Your guests then only need to scan it with their phone. No more "how's the password spelled?"-hassle!</p>
 
-      <form class="form-horizontal"  >
-        <div class="form-group">
-          <label class="col-xs-3 control-label" for="ssid">SSID</label>
-          <div class="col-xs-9">
-            <input type="text" class="form-control" id="ssid" placeholder="SSID"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-xs-3 control-label" for="key">Password</label>
-          <div class="col-xs-9">
-            <input type="text" class="form-control" id="key" placeholder="Password" />
-            <span class="help-block">Will not be stored, even not sent outside the browser.</span>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-xs-3 control-label" for="encryption">Encryption</label>
-          <div class="col-xs-9">
-            <select class="form-control" id="encryption">
-              <option value="WPA">WPA/WPA2</option>
-              <option>WEP</option>
-              <option>nopass</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-offset-3 col-xs-9">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" id="hidden"> Network is hidden / invisible
-              </label>
+          <p>When scanned with an Android phone, the Wifi network will be immediately recognized and you will be asked to connect with it. On iPhone/iOS, you will see the text and can copy/paste the password from it. Just try it out with the code aside.</p> 
+
+        <form class="form-horizontal"  >
+          <div class="form-group">
+            <label class="col-xs-3 control-label" for="ssid">SSID</label>
+            <div class="col-xs-9">
+              <input type="text" class="form-control" id="ssid" placeholder="SSID"/>
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-offset-3 col-xs-9">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" id="hide-key"> Hide password on poster
-                <span class="help-block">Password will still be readable from the QR code!</span>
-              </label>
+          <div class="form-group">
+            <label class="col-xs-3 control-label" for="key">Password</label>
+            <div class="col-xs-9">
+              <input type="text" class="form-control" id="key" placeholder="Password" />
+              <span class="help-block">Will not be stored, even not sent outside the browser.</span>
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-offset-3 col-xs-9">
-            <button type="button" class="btn btn-primary" onclick="generate();">Preview &amp; Print</button>
+          <div class="form-group">
+            <label class="col-xs-3 control-label" for="encryption">Encryption</label>
+            <div class="col-xs-9">
+              <select class="form-control" id="encryption">
+                <option value="WPA">WPA/WPA2</option>
+                <option>WEP</option>
+                <option>nopass</option>
+              </select>
+            </div>
           </div>
+          <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="hidden"> Network is hidden / invisible
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="hide-key"> Hide password on poster
+                  <span class="help-block">Password will still be readable from the QR code!</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+              <button type="button" class="btn btn-primary" onclick="generate();">Preview &amp; Print</button>
+            </div>
+          </div>
+        </form>
         </div>
-      </form>
+
+        <div class="example thumbnail col-sm-3"><img src="img/example.png"></div>
+
       </div>
-
-      <div class="example thumbnail col-sm-3"><img src="img/example.png"></div>
       
     </div><!-- /.container -->
 
